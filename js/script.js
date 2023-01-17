@@ -29,4 +29,3 @@ function myButtonClicked() {
       "The total sum equals " + sum + ".<br>"
   }
 }
-

@@ -17,7 +17,7 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  var number = parseFloat(document.getElementById("integer-n").value)
+  var number = parseFloat(document.getElementById("number-input").value)
   var sum = 0
   var counter = 0
   var loop = 0

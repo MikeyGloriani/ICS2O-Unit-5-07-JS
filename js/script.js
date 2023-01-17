@@ -26,6 +26,6 @@ function myButtonClicked() {
     loop++
     sum = sum + loop
     document.getElementById("hello-world").innerHTML =
-      "The total sum equals " + sum + ".<br>"
+      "You get " + sum + ".<br>"
   }
 }

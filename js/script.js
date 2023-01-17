@@ -1,5 +1,5 @@
 // Created by: Mikey Gloriani
-// Created on: Oct 2022
+// Created on: Jan 2023
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit-5-07-JS/sw.js", {
+    scope: "/ICS2O-Unit-5-07-JS/",
   })
 }
 
@@ -17,5 +17,16 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  var number = parseFloat(document.getElementById("integer-n").value)
+  var sum = 0
+  var counter = 0
+  var loop = 0
+
+  for (let loop = 0; loop < number; ) {
+    loop++
+    sum = sum + loop
+    document.getElementById("hello-world").innerHTML =
+      "The total sum equals " + sum + ".<br>"
+  }
 }
+
